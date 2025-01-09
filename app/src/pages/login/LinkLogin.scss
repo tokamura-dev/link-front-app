@@ -1,0 +1,43 @@
+.login-container {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: 1px solid #EEEEEE;
+  border-radius: 8px;
+  background-color: #F5F5F5;
+  .title {
+    height: 20%;
+    font-size: 32px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 5% 0;
+    span {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .error-message-field {
+    text-align: center;
+    color: red;
+  }
+  .input-field {
+    height: 50%;
+  }
+  .forgot-password {
+    height: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    span {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .login-button {
+    height: 20%;
+    text-align: center;
+    margin: 5% 0 10% 0;
+  }
+}

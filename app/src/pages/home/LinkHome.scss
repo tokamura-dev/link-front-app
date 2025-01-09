@@ -1,0 +1,13 @@
+.home-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  .home-main-container {
+    width: 100%;
+    height: 100%;
+    .home-contents {
+      width: 100%;
+      height: 86%;
+    }
+  }
+}
