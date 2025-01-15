@@ -1,0 +1,85 @@
+.employee-info-container {
+  width: 98%;
+  padding: 1%;
+  div.MuiPaper-root {
+    margin: 0;
+  }
+  button.MuiAccordionSummary-root {
+    background-color: #0000FF;
+    color: white;
+    border-radius: 4px;
+    .MuiAccordionSummary-expandIconWrapper {
+      color: white;
+    }
+  }
+  .employee-info-serach-condition-detail {
+    width: 98%;
+    padding: 16px;
+    .employee-info-search-condition-first {
+      display: flex;
+      .tilde {
+        width: 1%;
+        display: flex;
+        align-items: center;
+      }
+      .serach-condition-employee-id-start {
+        width: 7%;
+        margin-right: 1%;
+      }
+      .serach-condition-employee-id-end {
+        width: 7%;
+        margin-left: 1%;
+      }
+      .serach-condition-employee-name {
+        width: 23%;
+        margin: 0 1%;
+      }
+      .serach-condition-date-of-join-start {
+        width: 10.5%;
+        margin-right: 1%;
+      }
+      .serach-condition-date-of-join-end {
+        width: 10.5%;
+        margin-left: 1%;
+      }
+      .serach-condition-button-group {
+        padding: 0.5% 0;
+        margin-left: auto;
+        .serach-condition-clear-button {
+          margin-right: 10px;
+          color: #0000FF;
+          border-color: #0000FF;
+          &:hover {
+            background-color: #CCCCCC;
+          }
+        }
+        .serach-condition-search-button {
+          background-color: #0000FF;
+          &:hover {
+            background-color: #000033;
+          }
+        }
+      }
+    }
+  }
+}
+.search-result-container {
+  padding: 1% 0;
+  .search-result {
+    font-size: 18px;
+    padding-bottom: 1%;
+    display: flex;
+    .search-result-title {
+      width: 5%;
+    }
+  }
+  .search-result-table-header {
+    background-color: #0000FF;
+    .search-result-table-header-cell {
+      color: white;
+    }
+  }
+  .search-result-table-body-row:nth-child(even) {
+    background-color: #D9E5FF;
+  }
+}

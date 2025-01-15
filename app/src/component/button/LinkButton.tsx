@@ -6,6 +6,10 @@ type Props = {
   buttonName: string;
   /** ボタンサイズ */
   size: "small" | "medium" | "large" | undefined;
+  /** クラス名 */
+  className?: string;
+  /** ボタンデザイン */
+  variant?: "text" | "outlined" | "contained"
   /** ボタン押下時処理 */
   handleOnClick: () => void;
 };
@@ -16,7 +20,12 @@ const LinkButton: FunctionComponent<Props> = (props: Props) => {
   };
 
   return (
-    <Button size={props.size} variant="contained" onClick={handleOnClick}>
+    <Button
+      className={props.className}
+      size={props.size}
+      variant={props.variant === undefined ? "contained" : props.variant}
+      onClick={handleOnClick}
+    >
       {props.buttonName}
     </Button>
   );

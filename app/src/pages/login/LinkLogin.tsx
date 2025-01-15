@@ -56,7 +56,7 @@ const LinkLogin: FunctionComponent = () => {
   /**
    * ログインボタン押下時処理
    */
-  const handleOnClickLoginButton = async () => {
+  const handleOnClickLoginButton = async (): Promise<void> => {
     // 社員IDの未入力チェック
     if (_isEmpty(loginState.employeeId)) {
       dispatch({
@@ -145,19 +145,23 @@ const LinkLogin: FunctionComponent = () => {
       </div>
       <div className="input-field">
         <LinkTextBox
+          value={loginState.employeeId}
           errorFlg={loginState.employeeIdErrorFlg}
           errorMessage={loginState.employeeIdErrorMessage}
           textBoxType="text"
           labelName="社員ID"
           autoComplete="off"
+          maxLength={6}
           handleOnChange={handleOnChangeEmployeeId}
         />
         <LinkTextBox
+          value={loginState.password}
           errorFlg={loginState.passwordErrorFlg}
           errorMessage={loginState.passwordErrorMessage}
           textBoxType="password"
           labelName="パスワード"
           autoComplete="off"
+          maxLength={30}
           handleOnChange={handleOnChangePassword}
         />
       </div>

@@ -1,8 +1,6 @@
 .login-container {
-  width: 30%;
-  margin: 0 auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  width: 25%;
+  margin: 13% auto;
   border: 1px solid #EEEEEE;
   border-radius: 8px;
   background-color: #F5F5F5;
@@ -23,7 +21,11 @@
     color: red;
   }
   .input-field {
-    height: 50%;
+    padding: 0 20% 5% 20%;
+    .MuiTextField-root {
+      width: 100%;
+      margin: 5% 0;
+    }
   }
   .forgot-password {
     height: 10%;
@@ -38,6 +40,6 @@
   .login-button {
     height: 20%;
     text-align: center;
-    margin: 5% 0 10% 0;
+    margin: 5% 0 5% 0;
   }
 }
